@@ -157,7 +157,6 @@ const descriptionContainer = document.getElementById("description-container");
 let unfundedGamesArray = GAMES_JSON.filter((games)=>{
     return games.pledged < games.goal;
 })
-console.log(unfundedGamesArray);
 
 
 // create a string that explains the number of unfunded games using the ternary operator
@@ -181,7 +180,17 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+let [firstGame,secondGame,...others] = sortedGames;
+
+let {name:name1,description:desc1,pledged:pl1,goal:goal1,backers:bkrs1,img:img1} = firstGame;
+let {name:name2,description:desc2,pledged:pl2,goal:goal2,backers:bkrs2,img:img2} = secondGame;
+
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
-
+let topGame = document.createElement("div");
+topGame.innerHTML = name1;
+firstGameContainer.appendChild(topGame);
 // do the same for the runner up item
+let runnerupGame = document.createElement("div");
+runnerupGame.innerHTML = name2;
+secondGameContainer.appendChild(runnerupGame);
