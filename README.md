@@ -27,18 +27,15 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://jmp.sh/FyFP9QIe' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+
+GIF created with ScreenToGif
+
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+One particular challenge I had was trying to figure out how to deconstruct a dictionary in challenge #7. I was under the assumption that it worked as showed in the background section provided in challenge #7. It took me a while to try searching on my own and I found out that deconstructing a dictionary requires {brackets} and requires either the variables to match the properties of the object (e.g. GAMES_JSON has property description, when deconstructing, variable needs to be named description exactly) OR attribute the property to the variable like you would a dictionary (e.g. const {name: topGameName, description: desc1,...} = GAMES_JSON[0])
 
 ## License
 
