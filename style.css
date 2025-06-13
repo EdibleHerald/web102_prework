@@ -37,6 +37,10 @@ body {
     width: 100%;
     text-align: center;
 }
+.stats-card:hover{
+    background-color: lightgreen;
+    border: 2px solid black;
+}
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
@@ -78,4 +82,19 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+#unfunded-btn:hover{
+    border:2px solid red;
+    box-shadow: 0 0 10px lightcoral;
+}
+
+#funded-btn:hover{
+    border:2px solid green;
+    box-shadow: 0 0 10px lightgreen;
+}
+
+#all-btn:hover{
+    border:2px solid blue;
+    box-shadow: 0 0 10px lightblue;
 }

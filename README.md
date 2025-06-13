@@ -17,7 +17,11 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X ] List anything else that you can get done to improve the app functionality!
+
+-I added :hover behavior on .stats-card to change background color for more emphasis on the contents.
+
+-I also added border-color and box-sizing on the button filters to add emotion to each option (e.g. unfunded games button being red on hover to show that its considered a bad thing)
 
 ## Video Walkthrough
 

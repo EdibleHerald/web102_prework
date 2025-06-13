@@ -56,7 +56,6 @@ function addGamesToPage(games) {
 
 
         // append the game to the games-container
-
 }
 
 // call the function we just defined using the correct variable
