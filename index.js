@@ -62,7 +62,7 @@ function addGamesToPage(games) {
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
 
-addGamesToPage(GAMES_JSON)
+
 /*************************************************************************************
  * Challenge 4: Create the summary statistics at the top of the page displaying the
  * total number of contributions, amount donated, and number of games on the site.
@@ -194,3 +194,6 @@ firstGameContainer.appendChild(topGame);
 let runnerupGame = document.createElement("div");
 runnerupGame.innerHTML = name2;
 secondGameContainer.appendChild(runnerupGame);
+
+// Initially show only funded games
+addGamesToPage(filterFundedOnly());
