@@ -29,7 +29,20 @@ const gamesContainer = document.getElementById("games-container");
 function addGamesToPage(games) {
 
     // loop over each item in the data
+    for(let item of games){
+        let newDiv = document.createElement("div");
+        newDiv.classList.add("game-card");
+        newDiv.innerHTML =  `
+            <p> Name: ${item.name} </p>
+            <p> Goal: ${item.goal} </p>
+            <p> Pledged: ${item.pledged} </p>
+            <p> Backers: ${item.backers} </p>
+            <img class=game-img src=${item.img} alt="Image of ${games.name}">
+        `
 
+        let gamesContainer = document.getElementById("games-container");
+        gamesContainer.appendChild(newDiv);
+    }
         // create a new div element, which will become the game card
 
 
@@ -49,7 +62,7 @@ function addGamesToPage(games) {
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
 
-
+addGamesToPage(GAMES_JSON)
 /*************************************************************************************
  * Challenge 4: Create the summary statistics at the top of the page displaying the
  * total number of contributions, amount donated, and number of games on the site.
